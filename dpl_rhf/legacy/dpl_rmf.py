@@ -7,7 +7,7 @@ from pathlib import Path
 
 import numpy as np
 
-from dpl_rmf_core import MODEL_INDEX, RHFCore, require_rmf_model, write_json
+from dpl_rhf.legacy.dpl_rmf_core import MODEL_INDEX, RHFCore, require_rmf_model, write_json
 
 
 def import_torch():
@@ -139,7 +139,7 @@ def scf_baseline(args: argparse.Namespace) -> None:
 def dpl_run(args: argparse.Namespace) -> None:
     require_rmf_model(args.model)
     torch = import_torch()
-    from dpl_model import PotentialNet, RMFPhysicsLoss
+    from dpl_rhf.legacy.dpl_model import PotentialNet, RMFPhysicsLoss
 
     out = ensure_out(args.out)
     torch.manual_seed(args.seed)

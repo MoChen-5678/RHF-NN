@@ -8,9 +8,9 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from fieldspace_model import FieldSpaceRMFNet
-from rmf_functional import PKDDParameters, PKDDRMFFunctional
-from variational_rmf import (
+from dpl_rhf.legacy.fieldspace_model import FieldSpaceRMFNet
+from dpl_rhf.legacy.rmf_functional import PKDDParameters, PKDDRMFFunctional
+from dpl_rhf.legacy.variational_rmf import (
     compare_single_particle,
     evaluate_dpl_with_fortran,
     independent_orbital_data,

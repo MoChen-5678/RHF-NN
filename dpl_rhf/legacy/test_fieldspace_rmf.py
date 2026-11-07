@@ -3,15 +3,15 @@ from __future__ import annotations
 import numpy as np
 import torch
 
-from fieldspace_model import FieldSpaceRMFNet
-from fieldspace_rmf import (
+from dpl_rhf.legacy.fieldspace_model import FieldSpaceRMFNet
+from dpl_rhf.legacy.fieldspace_rmf import (
     DifferentiableDiracMatrix,
     build_reconstructed_state,
     noncentral_derivative_matrix,
     woods_saxon_local_stack,
 )
-from rmf_functional import PKDDRMFFunctional
-from variational_rmf import independent_orbital_data
+from dpl_rhf.legacy.rmf_functional import PKDDRMFFunctional
+from dpl_rhf.legacy.variational_rmf import independent_orbital_data
 
 
 def make_problem(device: str = "cpu", hidden: int = 16, derivative_order: int = 1):

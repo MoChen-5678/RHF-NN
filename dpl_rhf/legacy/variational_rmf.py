@@ -9,9 +9,9 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from dpl_rmf_core import RHFCore, write_json
-from rmf_functional import PKDDRMFFunctional
-from variational_model import StrictSphericalRMFNet
+from dpl_rhf.legacy.dpl_rmf_core import RHFCore, write_json
+from dpl_rhf.legacy.rmf_functional import PKDDRMFFunctional
+from dpl_rhf.legacy.variational_model import StrictSphericalRMFNet
 
 
 PKDD_SIX = [

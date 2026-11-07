@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from rmf_functional import PKDDParameters
+from dpl_rhf.legacy.rmf_functional import PKDDParameters
 
 
 class PKDDNuclearMatter:

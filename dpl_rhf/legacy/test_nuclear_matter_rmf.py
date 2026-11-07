@@ -1,6 +1,6 @@
 import torch
 
-from nuclear_matter_rmf import PKDDNuclearMatter
+from dpl_rhf.legacy.nuclear_matter_rmf import PKDDNuclearMatter
 
 
 def test_gauss_legendre_polynomial_exactness():

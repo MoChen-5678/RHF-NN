@@ -1,5 +1,2 @@
-numpy>=1.24
-torch>=2.0
-matplotlib>=3.7
-scipy>=1.10
-sympy>=1.12
+# Dependencies are defined once in pyproject.toml.
+-e .

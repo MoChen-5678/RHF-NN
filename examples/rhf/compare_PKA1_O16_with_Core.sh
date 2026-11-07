@@ -5,6 +5,7 @@ if (($# != 1)); then
   exit 2
 fi
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-exec "$ROOT/compare_with_core.sh" \
-  "$ROOT/work/outputs/PKA1_O16" 8 8 16 "$1" \
-  "$ROOT/work/outputs/PKA1_O16/core_comparison"
+cd "$ROOT"
+exec python -m dpl_rhf compare-core --kind rhf --model PKA1 --z 8 --n 8 \
+  --result "$ROOT/outputs/PKA1/O16" --core-dir "$1" \
+  --out "$ROOT/outputs/PKA1/O16/core"
